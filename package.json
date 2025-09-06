@@ -1,0 +1,35 @@
+{
+  "name": "schedulo",
+  "version": "1.0.0",
+  "author": "Baek",
+  "description": "Electron Test for Schedulo",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.example.electron_test",
+    "productName": "Schedulo",
+    "files": [
+      "public/**/*",
+      "main.js",
+      "preload.js",
+      "package.json"
+    ],
+    "asar": true,
+    "directories": { "output": "dist" },
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^37.2.6",
+    "electron-builder": "^26.0.12"
+  }
+}
