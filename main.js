@@ -29,7 +29,7 @@ const createWindow = () => {
   });
 
   // 개발 중 디버깅이 필요하면 주석 해제
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
 };
 
 app.whenReady().then(() => {
