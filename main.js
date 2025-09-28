@@ -7,6 +7,7 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width: width,
     height: height,
+    icon: path.join(__dirname, 'public/schedulo_logo.ico'),
     frame: true,
     autoHideMenuBar: true,
     backgroundColor: 'white',
