@@ -41,7 +41,7 @@
       "sign": false
     },
     "dmg": {
-      "background": "build/background.png",
+      "background": "public/background.png",
       "icon": "public/schedulo_logo.icns",
       "contents": [
         { "x": 130, "y": 220, "type": "file" },
